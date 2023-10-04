@@ -1,0 +1,10 @@
+name: variable example
+on: [push]
+jobs:
+  run-variable-action
+    runs-on: ubuntu-latest
+    env:
+      MY_VARIABLE: "Hell0, world!"
+    steps:
+      - name: print variable
+        run: echo $MY_VARIABLE
