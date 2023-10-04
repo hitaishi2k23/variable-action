@@ -1,7 +1,9 @@
 name: variable example
+
 on: [push]
+
 jobs:
-  run-variable-action
+  run-variable-action:
     runs-on: ubuntu-latest
     env:
       MY_VARIABLE: "Hell0, world!"
